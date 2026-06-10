@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
 st.title("Sales Amount Prediction")
 st.image("https://www.kavout.com/wp-content/uploads/2024/11/20241110140934.jpg")
-df=pd.read_csv("Amazon Sale Report.csv", low_memory=False)
+df=pd.read_csv("Amazon Sale Report.csv.gz", low_memory=False)
 cols=['Category','Size','Qty','Fulfilment','B2B','Amount']
 df=df[cols].dropna()
 encoders={}
