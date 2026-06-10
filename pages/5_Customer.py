@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 from sklearn.cluster import KMeans
 st.title("Customer Segmentation")
-df=pd.read_csv("Amazon Sale Report.csv", low_memory=False)
+df=pd.read_csv("Amazon Sale Report.csv.gz", low_memory=False)
 data=df[['Amount', 'Qty']].dropna()
 kmeans=KMeans(n_clusters=3, random_state=42, n_init=10)
 data['Cluster']=kmeans.fit_predict(data)
