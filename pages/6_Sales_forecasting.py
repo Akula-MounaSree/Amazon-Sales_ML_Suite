@@ -5,7 +5,7 @@ import plotly.express as px
 st.title("📈 Sales Forecasting (Simple Version)")
 
 # Load Data
-df = pd.read_csv("Amazon Sale Report.csv")
+df = pd.read_csv("Amazon Sale Report.csv.gz")
 
 # Convert columns
 df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
