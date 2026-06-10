@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 st.title("Order Status Prediction")
 st.image("https://media.licdn.com/dms/image/v2/D5612AQGIQW_nyITXqw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1689785019340?e=2147483647&v=beta&t=T8SjJAHf1ntT2TUCYeYtSPMijlirbRp99lmETKmFOy0")
-df=pd.read_csv("Amazon Sale Report.csv", low_memory=False)
+df=pd.read_csv("Amazon Sale Report.csv.gz", low_memory=False)
 features=['Category','Size','Qty','Fulfilment','Amount']
 target="Status"
 df=df[features+[target]].dropna()
