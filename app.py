@@ -1,4 +1,5 @@
 import streamlit as st
+st.title("AMAZON-SALES-ML-SUITE")
 st.set_page_config(
     page_title="Amazon Sales ML Suite",
     page_icon="📦",
